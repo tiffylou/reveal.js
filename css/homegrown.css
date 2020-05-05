@@ -1,0 +1,217 @@
+/* set the CSS */
+
+.homegrown * {
+  font-family: 'Assistant', sans-serif;
+}
+
+.homegrown .homegrown body {
+  background-color: #eee;
+  margin: 20px;
+  color: #222;
+}
+
+.homegrown h1 {
+  /* margin-bottom: 0px; */
+  font-family: 'Playfair Display', serif;
+  font-weight: 200;
+  font-size: 24px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.homegrown h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 200;
+}
+
+.homegrown p {
+  font-size: 14px !important;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.homegrown .small {
+  font-size: 11px;
+}
+
+.homegrown label {
+  margin-right: 20px;
+}
+
+.homegrown rect.bar {
+  fill: #EA2489;
+}
+
+.homegrown circle {
+  fill: #EA2489;
+}
+
+.homegrown .trendline {
+  stroke: orange;
+  stroke-dasharray: 2;
+  stroke-width: 2px;
+}
+
+.homegrown .domain {
+  display: none;
+}
+
+.homegrown .vertical-line:nth-of-type(3) {
+  stroke: orange;
+  stroke-dasharray: 2;
+  stroke-width: 2px;
+}
+
+.homegrown div[class$="-tooltip"] {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 45px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  pointer-events: none;
+}
+
+.homegrown div.table-tooltip {
+  width: 170px;
+  background: #222;
+  color: white;
+  padding-top: 20px;
+}
+
+.homegrown .flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+.homegrown .flex-item {
+  width: calc(32% - 20px);
+  padding: 0px 10px 10px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 19px 0px rgba(212, 212, 212, 0.52);
+  -moz-box-shadow: 10px 10px 19px 0px rgba(212, 212, 212, 0.52);
+  box-shadow: 10px 10px 19px 0px rgba(212, 212, 212, 0.52);
+}
+
+.homegrown .flex-item-1 {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+.homegrown .flex-item-2 {
+  width: calc(24% - 20px);
+}
+
+.homegrown .flex-item-4 {
+  width: calc(24% - 20px);
+}
+
+.homegrown .flex-item h2 {
+  margin-bottom: 0px;
+}
+
+.homegrown .flex-item p span {
+  margin: 5px;
+}
+
+.homegrown .description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  columns: 3;
+  column-fill: auto;
+}
+
+.homegrown .tick line {
+  stroke: #ddd;
+  stroke-dasharray: 2;
+}
+
+.homegrown .legend span {
+  margin-right: 10px;
+}
+
+.homegrown .legend img {
+  vertical-align: bottom;
+}
+
+/* Custom styles */
+#c03 rect[data-name="Laura Lee"], #c03 rect[data-name="Zoe Sugg"],
+#c04 rect[data-name="Jacklyn Hill"], #c04 rect[data-name="Carli Bybel"] {
+  opacity: .15;
+} 
+
+.homegrown th {
+  font-size: 10px;
+}
+
+.homegrown td {
+  font-size: 12px;
+}
+
+.homegrown tr {
+  padding: 12px 0px;
+}
+
+.homegrown table .icon {
+  width: 50px;
+  padding-right: 5px;
+}
+
+.homegrown table .icon img {
+  width: 20px;
+  margin-top: 3px;
+}
+
+.homegrown table .name {
+  text-align: left;
+  width: 60%;
+}
+
+.homegrown table .uploads {
+    width: 30px;
+}
+
+.homegrown table .views {
+  width: 30px;
+}
+
+.homegrown table .subs {
+  width: 30px;
+}
+
+.homegrown table .days {
+  width: 30px;
+}
+
+.homegrown #c11 {
+  max-width: 1000px;
+  margin: 0 auto;
+}

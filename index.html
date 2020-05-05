@@ -1,50 +1,138 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+<link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/homegrown.css">
+
+<style>
+	* {
+		font-family: 'Playfair Display', serif !important;
+		font-weight: 200;
+		background: #eee;
+		color: #222;
+	}
+
+	* li {
+		font-family: 'Assistant', sans-serif !important;
+		font-size: smaller;
+	}
+
+	h1 {
+		text-transform: capitalize !important;
+		font-weight: 200 !important;
+		font-size: 24px !important;
+		text-align: left;
+	}
+</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				Beauty Influencer Analysis
+			</section>
+			<section>
+				Searching for a Dataset...
+			</section>
+			<section>
+				Data Collection
+			</section>
+			<section>
+				<ul>
+					<li class="fragment">youtube influencers</li>
+					<li class="fragment">variety of sources</li>
+					<li class="fragment">initial list of 200 influencers</li>
+				</ul>
+			</section>
+			<section>
+				Data Cleaning
+			</section>
+			<section>
+				<ul>
+					<li class="fragment">channel at least 1 year old</li>
+					<li class="fragment">posted video this year</li>
+					<li class="fragment">English is primary language</li>
+					<li class="fragment">posted video about makeup within last 3 videos</li>
+				</ul>
+			</section>
+			<section>
+				Final Dataset
+			</section>
+
+			<section data-background="#eee">
+
+			</section>
+
+			<section data-background="#eee">
+				<img class="fragment" src="css/1.png" alt="" style="max-width: 45%; float:left">
+				<img class="fragment" src="css/2.png" alt="" style="max-width: 45%; float:right">
+			</section>
+			<section data-background="#eee">
+				<img class="fragment" src="css/3.png" alt="" style="max-width: 45%; float:left">
+				<img class="fragment" src="css/4.png" alt="" style="max-width: 45%; float:right">
+			</section>
+			<section data-background="#eee">
+				<img class="fragment" src="css/5.png" alt="" style="max-width: 30%; float:left">
+				<img class="fragment" src="css/6.png" alt="" style="max-width: 30%; float:left; margin: 15px 3% 0px;">
+				<img class="fragment" src="css/7.png" alt="" style="max-width: 30%; float:left">
+			</section>
+			<section>
+				That's all!
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/histogram.js"></script>
+  <script src="js/scatterplot.js"></script>
+  <script src="js/boxplot.js"></script>
+  <script src="js/bar.js"></script>
+  <script src="js/main.js"></script>
+	
+  <script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+  </script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			hash: true,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/highlight/highlight.js' },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
